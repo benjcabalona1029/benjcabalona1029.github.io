@@ -1,5 +1,0 @@
-pandas
-altair
-numpy
-ipywidgets
-nbinteract
