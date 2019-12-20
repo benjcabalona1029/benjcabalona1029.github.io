@@ -9129,15 +9129,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12519,7 +12519,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -13033,14 +13033,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -13079,6 +13079,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<img src="style/images/map.png">
 <h3 id="Data-Collection">Data Collection<a class="anchor-link" href="#Data-Collection">&#182;</a></h3><p>Data was downloaded from BigQuery's publicly available dataset. Kaggle was used to extract the data, as they have a free integration with BigQuery. My script for downloading the data is <a href="https://www.kaggle.com/benjamincabalonajr/nyc-taxi">here.</a></p>
 <p>We ended up having 2 datasets:</p>
 <ul>
@@ -13945,24 +13946,24 @@ Average Salary in the Dataset 37.02352364678449
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 Call:
-lm(formula = fare_amount ~ tip_amount + trip_distance + zone_id, 
+lm(formula = fare_amount ~ tip_amount + trip_distance + zone_id,
     data = data)
 
 Residuals:
-    Min      1Q  Median      3Q     Max 
--5.9955 -0.9052 -0.0922  0.9730  9.6500 
+    Min      1Q  Median      3Q     Max
+-5.9955 -0.9052 -0.0922  0.9730  9.6500
 
 Coefficients:
-               Estimate Std. Error t value Pr(&gt;|t|)    
+               Estimate Std. Error t value Pr(&gt;|t|)
 (Intercept)   10.900811   0.545341  19.989  &lt; 2e-16 ***
 tip_amount     2.368028   0.043397  54.566  &lt; 2e-16 ***
 trip_distance  0.362769   0.090533   4.007 8.07e-05 ***
-zone_id       -0.001075   0.001389  -0.774     0.44    
+zone_id       -0.001075   0.001389  -0.774     0.44
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 1.692 on 255 degrees of freedom
-Multiple R-squared:  0.9234,	Adjusted R-squared:  0.9225 
+Multiple R-squared:  0.9234,	Adjusted R-squared:  0.9225
 F-statistic:  1025 on 3 and 255 DF,  p-value: &lt; 2.2e-16
 
 </pre>
@@ -13980,7 +13981,7 @@ F-statistic:  1025 on 3 and 255 DF,  p-value: &lt; 2.2e-16
   </div>
 </body>
 
- 
+
 
 
 </html>
