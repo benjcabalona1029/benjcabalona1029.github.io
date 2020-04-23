@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Introduction to Statistics with Applications in Python</title>
+<title>Itaewon</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -9129,15 +9129,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box
+/* This file is a compatability layer.  It allows the usage of flexible box 
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this
+`Modern browsers` comments below).  Browsers that are known to implement this 
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+
+    Internet Explorer 11+ 
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12519,7 +12519,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for
+  /* This injects handle bars (a short, wide = symbol) for 
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -13033,14 +13033,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  }
-  div.output_wrapper {
+  } 
+  div.output_wrapper { 
     display: block;
-    page-break-inside: avoid;
+    page-break-inside: avoid; 
   }
-  div.output {
+  div.output { 
     display: block;
-    page-break-inside: avoid;
+    page-break-inside: avoid; 
   }
 }
 </style>
@@ -13084,7 +13084,7 @@ div#notebook {
 <script>
 $( document ).ready(function(){
 
-            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {"height": "calc(100% - 180px)", "left": "10px", "top": "150px", "width": "307.2px"}, "toc_section_display": true, "toc_window_display": true};
+            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {}, "toc_section_display": true, "toc_window_display": true};
 
             // fire the main function with these parameters
             require(['nbextensions/toc2/toc2'], function (toc2) {
@@ -13099,10 +13099,15 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Comments">Comments<a class="anchor-link" href="#Comments">&#182;</a></h2><p>This introductory material is prepared by Benjamin Reyes Cabalona Jr. If you find any issues, please send me a message at benjamin.cabalonajr@outlook.com</p>
-<p>Connect with me on
- <a href="https://www.linkedin.com/in/benjamin-cabalona-828bbb156/">LinkedIn</a></p>
-<p>Feel free to distribute, but i'll appreciate if you can provide some credits :)</p>
+<h1 id="Some-Basic-Ideas">Some Basic Ideas<a class="anchor-link" href="#Some-Basic-Ideas">&#182;</a></h1><p><strong>Stock or Share</strong> is a unit of ownership in a company. When you invest in the stock market, (stock market is basically a place for buying or selling stocks) there are 2 main ways of earning:</p>
+<ul>
+<li><strong>Dividend</strong> - This is an amount paid to you by a company for your investment. </li>
+<li><strong>Stock Trading</strong> - The profit that you make for buying/selling stocks.</li>
+<li><strong>Portfolio</strong> - A combination of assets of an individual / investor.</li>
+</ul>
+<p>Fundamentally, you can earn money by buying some stocks, in the hope that it's price will increase in the future.</p>
+<p>There are actually clever ways on how to earn even if you predict that a stock price will decline, but that's outside the scope of this lecture.</p>
+<p>So in this lecture, we'll oversimplify and what we want is to <strong>buy a stock cheap, and sell it when it's price have increased</strong> because that way we will make a profit. Otherwise we will incur a loss, if we decided to stell a stock at a cheaper price.</p>
 
 </div>
 </div>
@@ -13110,12 +13115,18 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h1><ul>
-<li>Statistics is the study of how best to collect, analyze, and draw conclusions from data.</li>
-<li>In this notes, we will work on a python object known as a <code>dataframe</code>. It's a tabular data similar to that of excel. Example data is shown below.</li>
-<li>This is not a python tutorial, it's introductory statistics with some of the applications in Python.</li>
-<li>You can run this jupyter notebook on the cloud by going to <a href="https://mybinder.org/v2/gh/benjcabalona1029/DETC-Workshop/master">this</a>  link and choosing the appropriate file name.</li>
+<h1 id="Modern-Portfolio-Theory-(Markowitz-Model)">Modern Portfolio Theory (Markowitz Model)<a class="anchor-link" href="#Modern-Portfolio-Theory-(Markowitz-Model)">&#182;</a></h1><p>As mentioned above, investing in the stock market can result in either profit or loss.</p>
+<p>In a nutshell, Modern Portfolio Theory is a way of maximizing return for a given risk. We will define what <em>return</em> and <em>risk</em> means shortly.</p>
+<p>Let's understand this by using an example.</p>
+<p>Suppose you wanted to invest in the stock market. After completing your research, you decided to invest in the following companies:</p>
+<ul>
+<li>MEG</li>
+<li>MAXS</li>
+<li>JFC</li>
+<li>ALI</li>
 </ul>
+<p>We will download the data for this using a python library called fastquant. It was actually developed by a fellow Filipino Data Scientist. It aims to democratized data driven investments for everyone.</p>
+<p><strong>NOTE</strong> The model we'll be using relies on the assumption that returns are normally distributed. Therefore, it helps if we have large number of data points.</p>
 
 </div>
 </div>
@@ -13125,9 +13136,15 @@ $( document ).ready(function(){
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This is just for some settings</span>
-<span class="kn">from</span> <span class="nn">IPython.core.interactiveshell</span> <span class="kn">import</span> <span class="n">InteractiveShell</span>
-<span class="n">InteractiveShell</span><span class="o">.</span><span class="n">ast_node_interactivity</span> <span class="o">=</span> <span class="s2">&quot;all&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+
+<span class="kn">import</span> <span class="nn">scipy.optimize</span> <span class="k">as</span> <span class="nn">optimization</span>
+<span class="kn">from</span> <span class="nn">fastquant</span> <span class="kn">import</span> <span class="n">get_stock_data</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
 </pre></div>
 
     </div>
@@ -13140,11 +13157,20 @@ $( document ).ready(function(){
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;sales.csv&#39;</span><span class="p">)</span>
-<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">stocks</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;MEG&#39;</span><span class="p">,</span> <span class="s1">&#39;MAXS&#39;</span><span class="p">,</span> <span class="s1">&#39;JFC&#39;</span><span class="p">,</span> <span class="s1">&#39;ALI&#39;</span><span class="p">]</span>
+<span class="n">datas</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">stocks</span><span class="p">:</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">get_stock_data</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;2017-01-01&quot;</span><span class="p">,</span> <span class="s2">&quot;2020-01-01&quot;</span><span class="p">)</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;DATE&#39;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;Volume&#39;</span><span class="p">]</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;DATE&#39;</span><span class="p">,</span><span class="n">i</span><span class="p">]]</span>
+    <span class="n">datas</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">datas1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">datas</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">datas</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;DATE&#39;</span><span class="p">])</span>
+<span class="n">datas2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">datas</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="n">datas</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span><span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;DATE&#39;</span><span class="p">])</span>
+<span class="c1"># datas3 = pd.merge(datas[4],datas[5],on=[&#39;DATE&#39;])</span>
+<span class="c1"># datas4 = pd.merge(datas1,datas2,on=[&#39;DATE&#39;])</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">datas1</span><span class="p">,</span><span class="n">datas2</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;DATE&#39;</span><span class="p">])</span>
+<span class="n">data</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;DATE&#39;</span><span class="p">]</span>
+<span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;DATE&#39;</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13157,7 +13183,49 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[2]:</div>
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Reading cached file found: MEG_2017-01-01_2020-01-01.csv
+Reading cached file found: MAXS_2017-01-01_2020-01-01.csv
+Reading cached file found: JFC_2017-01-01_2020-01-01.csv
+Reading cached file found: ALI_2017-01-01_2020-01-01.csv
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The data below is the first 5 entries in our dataset. The values here are <em>closing prices</em>. A <em>closing price</em> is a price of a stock, at the end of a given trading day.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -13180,71 +13248,54 @@ $( document ).ready(function(){
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Sales</th>
-      <th>Advertising</th>
-      <th>Season</th>
+      <th>MEG</th>
+      <th>MAXS</th>
+      <th>JFC</th>
+      <th>ALI</th>
+    </tr>
+    <tr>
+      <th>DATE</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>0</td>
-      <td>2741.091348</td>
-      <td>1014.559605</td>
-      <td>0</td>
+      <th>2017-01-03</th>
+      <td>3.54</td>
+      <td>25.5</td>
+      <td>200.0</td>
+      <td>32.00</td>
     </tr>
     <tr>
-      <td>1</td>
-      <td>1940.775825</td>
-      <td>790.564398</td>
-      <td>1</td>
+      <th>2017-01-04</th>
+      <td>3.67</td>
+      <td>26.7</td>
+      <td>206.0</td>
+      <td>33.30</td>
     </tr>
     <tr>
-      <td>2</td>
-      <td>2947.421974</td>
-      <td>1104.859227</td>
-      <td>0</td>
+      <th>2017-01-05</th>
+      <td>3.72</td>
+      <td>27.3</td>
+      <td>214.0</td>
+      <td>34.15</td>
     </tr>
     <tr>
-      <td>3</td>
-      <td>3758.135236</td>
-      <td>803.407361</td>
-      <td>0</td>
+      <th>2017-01-06</th>
+      <td>3.75</td>
+      <td>28.0</td>
+      <td>213.0</td>
+      <td>34.50</td>
     </tr>
     <tr>
-      <td>4</td>
-      <td>2807.736707</td>
-      <td>797.194371</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>1356.145742</td>
-      <td>838.751170</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>3708.851744</td>
-      <td>1101.761696</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>2866.364644</td>
-      <td>780.641034</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>3500.841560</td>
-      <td>957.627052</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>4257.200342</td>
-      <td>1125.455506</td>
-      <td>0</td>
+      <th>2017-01-09</th>
+      <td>3.75</td>
+      <td>27.6</td>
+      <td>215.0</td>
+      <td>33.95</td>
     </tr>
   </tbody>
 </table>
@@ -13260,88 +13311,18 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Types-of-Data">Types of Data<a class="anchor-link" href="#Types-of-Data">&#182;</a></h2><ul>
-<li><p>Numeric Data</p>
+<p>Now, let's ask ourselves. Why don't we invest in a single company, instead of investing in Multiple companies.</p>
+<p>Modern Portfolio Theory tells us that we can <em>minimize</em> our lost thru diversification. Let's understand this by an example.</p>
+<p>Suppose you decided to invest on January 2017. For illustraton purposes, let's consider the period January 2017 - May 2018.</p>
 <ul>
-<li>Discrete : Something that can be counted. Some examples are number of balls owned, number of children in a household etc.</li>
-<li>Continuous : Real-Valued. Contains rational or irrational numbers. Some examples are house prices, temperature etc.</li>
+<li>Case 1: You invested solely on MAXS</li>
+<li>Case 2: You decided to invest 50% to MAXS and the other 50% to JFC</li>
 </ul>
-</li>
-<li><p>Categorical Data</p>
-<ul>
-<li>Nominal : It's a type of a categorical variable that has no inherent order in it. Some examples are color of the cars, male or females, different countries, names etc.</li>
-<li>Ordinal : It's a type of categorical variable that has a specific order in it. Some example are, rankings (Good, Better, Best) (Agree, Neutral, Disagree) etc.</li>
+<p>If you decided to go with case 1, it would be clear that you could immediately lost some money (as the chart shows a decreasing trend). If you instead decided to go with Case 2, your loss could have been mitigated since the price for JFC is increasing during that period.</p>
+<p>Of course you could argue that "why not invest all of my money in JFC" well, my counter argument to that would be, when JFC is experiencing a decline on it's price, there would be some other company that's actually experiencing an increase on it's price.</p>
+<h2 id="Key-Takeaway">Key Takeaway<a class="anchor-link" href="#Key-Takeaway">&#182;</a></h2><ul>
+<li>Invest in multiple stocks as much as possible, to minimize your loss. (Technically uncorrelated or negatively correlated)</li>
 </ul>
-</li>
-</ul>
-<h2 id="Measure-of-Central-Tendency">Measure of Central Tendency<a class="anchor-link" href="#Measure-of-Central-Tendency">&#182;</a></h2><ul>
-<li>As the name implies, it gives us a numerical summary of the data. Specifically it tells us the center of the data.</li>
-<li>It's easiest to think about measure of central tendency as 'different types of averages'.</li>
-</ul>
-<h3 id="Mean">Mean<a class="anchor-link" href="#Mean">&#182;</a></h3><ul>
-<li>The mean is the easiest, and you have probably used the mean before. It is simply the "sum of all the data divided by the number of data" or more formally as below:
-$$\bar{x} = \sum_{i=1}^{n} \frac{x_i}{n}$$</li>
-</ul>
-<p>Going back to our example data above, this is how we <em>Mean</em> of the <code>Sales</code> column.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Sales&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[3]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>3292.6012293132967</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Median">Median<a class="anchor-link" href="#Median">&#182;</a></h3><ul>
-<li>Is the middle value.</li>
-<li>Steps to get the median:<ul>
-<li>Sort the data.</li>
-<li>If the number of datapoints is odd, the median is the middle value.</li>
-<li>If the number of datapoints is even, take the mean of the 2 middle values.</li>
-</ul>
-</li>
-</ul>
-<p>Let me give an example to clear that up. Suppose we have the dataset below:</p>
-<p>Height = [163, 158, 149, 144, 160]</p>
-<p>Step 1 - Sort the data : <br>
-[144, 149, 158, 160, 163] <br>
-Step 2 - Since there are 5 datapoints, the median is simply the middle value, which is 158.</p>
-<p>Weight = [53, 62, 49, 44]</p>
-<p>Step 1 - Sort the data: <br>
-[44, 49, 53, 62] <br>
-Step 2 - Since there are 4 datapoints, we need to take the mean of <code>49</code> and <code>53</code>. Therefore the median is 51.</p>
-<p>Similar to the above code, this is how we get the median of the <code>Sales</code> column.</p>
 
 </div>
 </div>
@@ -13351,7 +13332,7 @@ Step 2 - Since there are 4 datapoints, we need to take the mean of <code>49</cod
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Sales&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;MAXS&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span><span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13370,7 +13351,21 @@ Step 2 - Since there are 4 datapoints, we need to take the mean of <code>49</cod
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>3300.597735345358</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f31ab4e5f28&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="Itaewon_files/Itaewon_7_1.png"
+>
 </div>
 
 </div>
@@ -13378,44 +13373,72 @@ Step 2 - Since there are 4 datapoints, we need to take the mean of <code>49</cod
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Mode">Mode<a class="anchor-link" href="#Mode">&#182;</a></h3><ul>
-<li>The mode is the most frequent value. If there are 2 most frequent value, then we say that the data is <em>bimodal</em>. In general, if there are more than 2 most frequent value we say that the data is <em>multimodal</em>.</li>
-</ul>
-<p>Example :</p>
-<p>Pebbles = [6, 3, 9, 6, 6, 5, 9, 3] <br>
-The mode is 6. (it occurs most often).</p>
-<p>Pebbles = [1,1,2,2,4,5,6] <br>
-The modes are 1 and 2.</p>
-<p>Note that Mode only makes sense if the data is either Categorical or Discrete.</p>
-<h3 id="When-to-use-Median-or-Mode?">When to use Median or Mode?<a class="anchor-link" href="#When-to-use-Median-or-Mode?">&#182;</a></h3><p>If there is an 'outlier' in the dataset, use the median (Or if the dataset is <em>skewed</em>) Let me illustrate this with an example.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">salary</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10000</span><span class="p">,</span><span class="mi">14000</span><span class="p">,</span><span class="mi">13000</span><span class="p">,</span><span class="mi">50000</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;JFC&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span><span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[5]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f31a93aa7b8&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="Itaewon_files/Itaewon_8_1.png"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, let's define what a return is. Intuitively, we can define return as :</p>
+<p><em>The stock price today minus the stock price yesterday. Divide the difference by the stock price yesterday</em></p>
+<p>More formally,</p>
+<p>The <em>return</em> from time $t$ to time ${t+1}$ is given by:</p>
+$$ R_{t,t+1} = \frac{P_{t+1}-P_{t}}{P_{t}} $$
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Suppose you used the mean</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span><span class="nb">sum</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">salary</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">returns</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">pct_change</span><span class="p">()</span>
+<span class="n">returns</span>
 </pre></div>
 
     </div>
@@ -13428,135 +13451,7 @@ The modes are 1 and 2.</p>
 
 <div class="output_area">
 
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>mean 21750.0
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Does 21,750 accurately represent the salary of an average worker? ?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Suppose you used the median</span>
-
-<span class="n">data_1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
-<span class="n">data_1</span><span class="p">[</span><span class="s1">&#39;salary&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">salary</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;median&#39;</span><span class="p">,</span><span class="n">data_1</span><span class="p">[</span><span class="s1">&#39;salary&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span><span class="s1">&#39;This makes more sense.&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>median 13500.0 This makes more sense.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Measure-of-Spread">Measure of Spread<a class="anchor-link" href="#Measure-of-Spread">&#182;</a></h2><h3 id="Variance-and-Standard-Deviation">Variance and Standard Deviation<a class="anchor-link" href="#Variance-and-Standard-Deviation">&#182;</a></h3><ul>
-<li>Variance measures how much each data point deviates from the mean. Numerically, this is given by :$$\sigma^2 = \sum_{i=1}^{n} \frac{(x_i-\bar{x})^2}{n-1}$$</li>
-</ul>
-<p>One issue with the variance is that, it's unit is squared, and that's something that is hard to interpret. We can take it's square root, and we will get the <em>standard deviation</em> denoted by $\sigma.$</p>
-<p><strong>Note:</strong> The above formula is for <em>sample variance</em> and <em>sample standard deviation.</em> We should use $n$ for the <em>population variance</em> and <em>population standard deviation.</em></p>
-<p>Let's print the Variance and Standard deviation from a Pandas DataFrame.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Variance:&#39;</span><span class="p">,(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Sales&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">())</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Standard Deviation:&#39;</span><span class="p">,</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Sales&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Variance: 883034.7884363923
-Standard Deviation: 939.6993074576528
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Below is the quick Python command to display the quick summary statistics of a dataframe.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13579,62 +13474,100 @@ Standard Deviation: 939.6993074576528
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Sales</th>
-      <th>Advertising</th>
-      <th>Season</th>
+      <th>MEG</th>
+      <th>MAXS</th>
+      <th>JFC</th>
+      <th>ALI</th>
+    </tr>
+    <tr>
+      <th>DATE</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>count</td>
-      <td>500.000000</td>
-      <td>500.000000</td>
-      <td>500.000000</td>
+      <th>2017-01-03</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
-      <td>mean</td>
-      <td>3292.601229</td>
-      <td>1007.219303</td>
-      <td>0.272000</td>
+      <th>2017-01-04</th>
+      <td>0.036723</td>
+      <td>0.047059</td>
+      <td>0.030000</td>
+      <td>0.040625</td>
     </tr>
     <tr>
-      <td>std</td>
-      <td>939.699307</td>
-      <td>255.556420</td>
-      <td>0.445436</td>
+      <th>2017-01-05</th>
+      <td>0.013624</td>
+      <td>0.022472</td>
+      <td>0.038835</td>
+      <td>0.025526</td>
     </tr>
     <tr>
-      <td>min</td>
-      <td>243.342237</td>
-      <td>351.805274</td>
+      <th>2017-01-06</th>
+      <td>0.008065</td>
+      <td>0.025641</td>
+      <td>-0.004673</td>
+      <td>0.010249</td>
+    </tr>
+    <tr>
+      <th>2017-01-09</th>
       <td>0.000000</td>
+      <td>-0.014286</td>
+      <td>0.009390</td>
+      <td>-0.015942</td>
     </tr>
     <tr>
-      <td>25%</td>
-      <td>2672.736612</td>
-      <td>828.484271</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2019-12-19</th>
+      <td>0.007371</td>
+      <td>0.008333</td>
+      <td>-0.040000</td>
+      <td>-0.007650</td>
+    </tr>
+    <tr>
+      <th>2019-12-20</th>
+      <td>-0.024390</td>
       <td>0.000000</td>
+      <td>-0.013889</td>
+      <td>0.013216</td>
     </tr>
     <tr>
-      <td>50%</td>
-      <td>3300.597735</td>
-      <td>1002.320382</td>
-      <td>0.000000</td>
+      <th>2019-12-23</th>
+      <td>0.007500</td>
+      <td>0.001653</td>
+      <td>0.032864</td>
+      <td>0.027174</td>
     </tr>
     <tr>
-      <td>75%</td>
-      <td>3896.906729</td>
-      <td>1192.226940</td>
-      <td>1.000000</td>
+      <th>2019-12-26</th>
+      <td>0.014888</td>
+      <td>-0.011551</td>
+      <td>-0.017273</td>
+      <td>-0.017989</td>
     </tr>
     <tr>
-      <td>max</td>
-      <td>5976.264097</td>
-      <td>1918.032460</td>
-      <td>1.000000</td>
+      <th>2019-12-27</th>
+      <td>-0.019560</td>
+      <td>0.035058</td>
+      <td>-0.000925</td>
+      <td>-0.019397</td>
     </tr>
   </tbody>
 </table>
+<p>725 rows × 4 columns</p>
 </div>
 </div>
 
@@ -13647,17 +13580,148 @@ Standard Deviation: 939.6993074576528
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="A-Primer-on-Visualizing-Data">A Primer on Visualizing Data<a class="anchor-link" href="#A-Primer-on-Visualizing-Data">&#182;</a></h2><p>Often times, we are concerned on:</p>
-<ul>
-<li>The structure of the data.</li>
-<li>How different types of data changes with eact other.</li>
-</ul>
-<p>And of course, there are analytical ways to describe the above scenarios but most of the times, we can answer it by simply plotting the data.</p>
-<h3 id="Histogram">Histogram<a class="anchor-link" href="#Histogram">&#182;</a></h3><ul>
-<li>Univariate (Single Variable at a time)</li>
-<li>Shows the distribution of your data by binning it. The taller the bin means more observations lie on that bin.</li>
-</ul>
-<p>You can watch  <a href="https://www.youtube.com/watch?v=qBigTkBLU6g">this</a>  excellent video from StatQuest for more explanation.</p>
+<p>The mean of the returns is called the <strong>Expected Return</strong>.</p>
+<p>Similarly, the <strong>Risk or Volatility</strong> is the standard deviation of the returns.</p>
+<p>(This is different from the expected return and volatility of a portfolio, this is for a single stock)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">returns</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[7]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>MEG     0.000370
+MAXS   -0.000830
+JFC     0.000258
+ALI     0.000626
+dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">returns</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[8]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>MEG     0.019875
+MAXS    0.018216
+JFC     0.017439
+ALI     0.016768
+dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We'll only plot MAXS and MEG to emphasize that the return for MEG is more volatile.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">returns</span><span class="p">[[</span><span class="s1">&#39;MAXS&#39;</span><span class="p">,</span><span class="s1">&#39;MEG&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[9]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f31a8ed7630&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="Itaewon_files/Itaewon_15_1.png"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Expected-Return-and-Risk-of-a-Portfolio">Expected Return and Risk of a Portfolio<a class="anchor-link" href="#Expected-Return-and-Risk-of-a-Portfolio">&#182;</a></h2><p>Suppose your portfolio consist of $R_1, R_2, R_3, ... ,R_n$ Then,</p>
+<p>$E(R) = w_1E(R_1) + w_2E(R_2) + w_3E(R_3) + ... + w_nE(R_n) $</p>
+<p>where $w_i$ is the components of an $n-dimensional$  vector that  sum up to 1.</p>
 
 </div>
 </div>
@@ -13667,12 +13731,32 @@ Standard Deviation: 939.6993074576528
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-
-<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s1">&#39;darkgrid&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">weights</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">stocks</span><span class="p">))</span>
+<span class="n">weights</span> <span class="o">/=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">weights</span><span class="p">)</span>
+<span class="n">weights</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[10]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([0.1406807 , 0.12089338, 0.24938351, 0.48904241])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13682,7 +13766,7 @@ Standard Deviation: 939.6993074576528
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Sales&#39;</span><span class="p">],</span><span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">kde</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">returns</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13701,21 +13785,11 @@ Standard Deviation: 939.6993074576528
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3dc12f7908&gt;</pre>
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="Introduction to Statistics with Applications in Python_files/Introduction to Statistics with Applications in Python_19_1.png"
->
+<pre>MEG     0.000370
+MAXS   -0.000830
+JFC     0.000258
+ALI     0.000626
+dtype: float64</pre>
 </div>
 
 </div>
@@ -13723,81 +13797,28 @@ Standard Deviation: 939.6993074576528
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Boxplot">Boxplot<a class="anchor-link" href="#Boxplot">&#182;</a></h3><ul>
-<li>The isolated points are outliers.</li>
-<li>The middle line represents the median.</li>
-</ul>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Sales&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">calculate_portfolio_return</span><span class="p">(</span><span class="n">returns</span><span class="p">,</span> <span class="n">weights</span><span class="p">):</span>
+    <span class="n">portfolio_return</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">returns</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">*</span><span class="n">weights</span><span class="p">)</span><span class="o">*</span><span class="mi">252</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Expected Portfolio Return:&quot;</span><span class="p">,</span> <span class="n">portfolio_return</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[12]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3dc0da3940&gt;</pre>
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="Introduction to Statistics with Applications in Python_files/Introduction to Statistics with Applications in Python_21_1.png"
->
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Scatterplot">Scatterplot<a class="anchor-link" href="#Scatterplot">&#182;</a></h3><ul>
-<li>Shows relationship between two numeric variables.</li>
-</ul>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Sales&#39;</span><span class="p">],</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Advertising&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">calculate_portfolio_return</span><span class="p">(</span><span class="n">returns</span><span class="p">,</span><span class="n">weights</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13810,29 +13831,13 @@ Standard Deviation: 939.6993074576528
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3dc0d745c0&gt;</pre>
-</div>
-
-</div>
-
-<div class="output_area">
-
     <div class="prompt"></div>
 
 
-
-
-<div class="output_png output_subarea ">
-<img src="Introduction to Statistics with Applications in Python_files/Introduction to Statistics with Applications in Python_23_1.png"
->
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Expected Portfolio Return: 0.08121828006183618
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -13842,11 +13847,9 @@ Standard Deviation: 939.6993074576528
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Barplot">Barplot<a class="anchor-link" href="#Barplot">&#182;</a></h3><ul>
-<li>Shows relationship between between</li>
-<li>Two Categorical Variables</li>
-<li>Categorical and Numeric</li>
-</ul>
+<p>If you had a course in Probability, you might recall that expectation of a random variable is linear while the variance is not. That's the same argument why the formula for the variance of a portfolio is quite more complicated.</p>
+<p>$Var(R) = \bf{w^{T}}\Sigma \textbf{w}$</p>
+<p>where $\Sigma$ is the covariance matrix of $R_i$</p>
 
 </div>
 </div>
@@ -13856,7 +13859,7 @@ Standard Deviation: 939.6993074576528
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Season&#39;</span><span class="p">],</span><span class="n">y</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Sales&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">returns</span><span class="o">.</span><span class="n">cov</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13873,45 +13876,77 @@ Standard Deviation: 939.6993074576528
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3dc0da3c50&gt;</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>MEG</th>
+      <th>MAXS</th>
+      <th>JFC</th>
+      <th>ALI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>MEG</th>
+      <td>0.000395</td>
+      <td>0.000051</td>
+      <td>0.000066</td>
+      <td>0.000113</td>
+    </tr>
+    <tr>
+      <th>MAXS</th>
+      <td>0.000051</td>
+      <td>0.000332</td>
+      <td>0.000019</td>
+      <td>0.000046</td>
+    </tr>
+    <tr>
+      <th>JFC</th>
+      <td>0.000066</td>
+      <td>0.000019</td>
+      <td>0.000304</td>
+      <td>0.000082</td>
+    </tr>
+    <tr>
+      <th>ALI</th>
+      <td>0.000113</td>
+      <td>0.000046</td>
+      <td>0.000082</td>
+      <td>0.000281</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
 
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="Introduction to Statistics with Applications in Python_files/Introduction to Statistics with Applications in Python_25_1.png"
->
-</div>
-
-</div>
-
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Note</strong> To make it more clear, let me show you how the same information from the barplot can be achieved numerically using a pivot table.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;Season&#39;</span><span class="p">,</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;Sales&#39;</span><span class="p">,</span><span class="n">aggfunc</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">returns</span><span class="o">.</span><span class="n">cov</span><span class="p">())</span>
 </pre></div>
 
     </div>
@@ -13947,21 +13982,40 @@ Standard Deviation: 939.6993074576528
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Sales</th>
-    </tr>
-    <tr>
-      <th>Season</th>
-      <th></th>
+      <th>MEG</th>
+      <th>MAXS</th>
+      <th>JFC</th>
+      <th>ALI</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>0</td>
-      <td>3304.708296</td>
+      <th>MEG</th>
+      <td>0.019875</td>
+      <td>0.007175</td>
+      <td>0.008150</td>
+      <td>0.010636</td>
     </tr>
     <tr>
-      <td>1</td>
-      <td>3260.197023</td>
+      <th>MAXS</th>
+      <td>0.007175</td>
+      <td>0.018216</td>
+      <td>0.004331</td>
+      <td>0.006803</td>
+    </tr>
+    <tr>
+      <th>JFC</th>
+      <td>0.008150</td>
+      <td>0.004331</td>
+      <td>0.017439</td>
+      <td>0.009034</td>
+    </tr>
+    <tr>
+      <th>ALI</th>
+      <td>0.010636</td>
+      <td>0.006803</td>
+      <td>0.009034</td>
+      <td>0.016768</td>
     </tr>
   </tbody>
 </table>
@@ -13974,36 +14028,12 @@ Standard Deviation: 939.6993074576528
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Knowing the above concept can actually take you far. In most practical cases, those simple calculations are enough to get meaningful insights from data. I recommend to watch <a href="https://www.youtube.com/watch?v=f2Pb0X0LfLo&t=630s">this</a>  youtube video by Isaac Reyes to learn more about effective data visualization.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Introduction-to-Inference">Introduction to Inference<a class="anchor-link" href="#Introduction-to-Inference">&#182;</a></h1><p>The material will be based on the book from OpenIntro Statistics.
-The book is free and you can download it from <a href="https://www.openintro.org/book/os/">here.</a></p>
-<p>The examples that we will be using are different but the above book is an excellent introductory textbook.</p>
-<h2 id="The-Normal-Distribution">The Normal Distribution<a class="anchor-link" href="#The-Normal-Distribution">&#182;</a></h2><p>Inference (Statistic in general) relies heavily on probability theory. For the sake of this material we will only discuss the Normal Distribution, and we will focus on the intuition rather than rigor.</p>
-<p>The Normal Distribution, aside from being so useful in practice, is an elegant result.I mean what does $\pi$ and $e$ has to do with its PDF? (Spoiler Alert, this is a <em>normalizing constant</em> ensuring that it integrates to 1) Unfortunately that is out of our scope.</p>
-<p>The Normal Distribution is describes a symmetric, unimodal, bell-shaped curve. It is denoted by
- $\mathcal{N}(\mu,\,\sigma^{2})\,. $</p>
-<p>Changing the mean ($\mu$) shifts the bell curve to the left or right, while changing the standard deviation $\sigma$ stretches or constricts the curve (Controls how 'fat' the distibution is).</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">normal</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">100000</span><span class="p">)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">normal</span><span class="p">,</span><span class="n">kde</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">returns</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14022,21 +14052,11 @@ The book is free and you can download it from <a href="https://www.openintro.org
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3dc0ce5710&gt;</pre>
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="Introduction to Statistics with Applications in Python_files/Introduction to Statistics with Applications in Python_30_1.png"
->
+<pre>MEG     0.019875
+MAXS    0.018216
+JFC     0.017439
+ALI     0.016768
+dtype: float64</pre>
 </div>
 
 </div>
@@ -14050,97 +14070,22 @@ The book is free and you can download it from <a href="https://www.openintro.org
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#For interactive plots in a notebook</span>
-<span class="c1">#This might not work on the HTML version of the notebook</span>
-<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">interact</span>
-<span class="k">def</span> <span class="nf">get_normal</span><span class="p">(</span><span class="n">mean</span><span class="p">,</span><span class="n">std</span><span class="p">,</span><span class="n">mean_2</span><span class="p">,</span><span class="n">std_2</span><span class="p">):</span>
-    <span class="n">normal</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">mean</span><span class="p">),</span><span class="nb">int</span><span class="p">(</span><span class="n">std</span><span class="p">),</span><span class="mi">100000</span><span class="p">)</span>
-    <span class="n">normal2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">mean_2</span><span class="p">),</span><span class="nb">int</span><span class="p">(</span><span class="n">std_2</span><span class="p">),</span><span class="mi">50000</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">normal</span><span class="p">,</span><span class="n">kde</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">),</span> <span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">normal2</span><span class="p">,</span><span class="n">kde</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
-
-<span class="n">interact</span><span class="p">(</span><span class="n">get_normal</span><span class="p">,</span><span class="n">mean</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="n">std</span><span class="o">=</span><span class="s1">&#39;5&#39;</span><span class="p">,</span><span class="n">mean_2</span><span class="o">=</span><span class="s1">&#39;5&#39;</span><span class="p">,</span><span class="n">std_2</span><span class="o">=</span><span class="s1">&#39;10&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">calculate_portfolio_risk</span><span class="p">(</span><span class="n">returns</span><span class="p">,</span> <span class="n">weights</span><span class="p">):</span>
+    <span class="n">portfolio_variance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">weights</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">returns</span><span class="o">.</span><span class="n">cov</span><span class="p">()</span><span class="o">*</span><span class="mi">252</span><span class="p">,</span><span class="n">weights</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Expected Risk:&quot;</span><span class="p">,</span> <span class="n">portfolio_variance</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-
-
-
-<div id="1bbb5b80-04c0-498c-9908-3e5e6eaf6de8"></div>
-<div class="output_subarea output_widget_view ">
-<script type="text/javascript">
-var element = $('#1bbb5b80-04c0-498c-9908-3e5e6eaf6de8');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "ce579e6e5d19401a8720c34e61b0c340", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[17]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;function __main__.get_normal(mean, std, mean_2, std_2)&gt;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Some-Properties-of-the-Normal-Distribution">Some Properties of the Normal Distribution<a class="anchor-link" href="#Some-Properties-of-the-Normal-Distribution">&#182;</a></h3><ul>
-<li>The Mean, Median and Mode are equal.</li>
-<li>68%,  95%,  and 99.7% of observations fall within 1, 2, and 3, standard deviations away from mean</li>
-</ul>
-<p><strong>Note</strong> It is possible for observations to fall &gt;3 standard deviations away from the mean, but it is very rare. Falling 5 standard deviation away from the mean has a probability of about 1-in-3.5 million.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Variability-in-Estimates">Variability in Estimates<a class="anchor-link" href="#Variability-in-Estimates">&#182;</a></h2><p>Consider the dataset below. It shows the income of 200 Data Scientists in Metro Manila. Using the said data, we wish to answer the question:</p>
-<p>"What is the average income of a "Data Scientist" working in Metro Manila?"</p>
-<p><strong>Note</strong> The following code simulates the income of 200 data scientists in Manila.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">60000</span><span class="p">,</span><span class="mi">15000</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
-<span class="n">income</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
-<span class="n">income</span><span class="p">[</span><span class="s1">&#39;Data Scientist&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span>
-<span class="n">income</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">income</span><span class="p">[</span><span class="s1">&#39;Data Scientist&#39;</span><span class="p">],</span><span class="n">kde</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">bins</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">calculate_portfolio_risk</span><span class="p">(</span><span class="n">returns</span><span class="p">,</span><span class="n">weights</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14153,97 +14098,13 @@ var element = $('#1bbb5b80-04c0-498c-9908-3e5e6eaf6de8');
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Data Scientist</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>86460.785190</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>66002.358126</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>74681.069762</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>93613.397988</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>88013.369852</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>45340.831802</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>74251.326263</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>57729.641876</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[18]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3dc0ce0eb8&gt;</pre>
-</div>
-
-</div>
-
-<div class="output_area">
-
     <div class="prompt"></div>
 
 
-
-
-<div class="output_png output_subarea ">
-<img src="Introduction to Statistics with Applications in Python_files/Introduction to Statistics with Applications in Python_34_2.png"
->
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Expected Risk: 0.19267217669560774
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -14253,8 +14114,9 @@ var element = $('#1bbb5b80-04c0-498c-9908-3e5e6eaf6de8');
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Point-Estimates">Point Estimates<a class="anchor-link" href="#Point-Estimates">&#182;</a></h3><p>We wanted to estimate the average income of the entire data scientists in Metro Manila. In other words, we wanted to estimate the <strong>population mean</strong> using the data that we have. The most intuitive way to do this is by taking the <strong>sample mean</strong> (i.e. the mean income based on our data.) We can simply do that by:</p>
-
+<h2 id="Sharpe-Ratio">Sharpe Ratio<a class="anchor-link" href="#Sharpe-Ratio">&#182;</a></h2><p>Remember, what we want is to find the best possible weight vector $\bf{w}$ that would give us the best possible return, with a minimal risk. Therefore, we will introduce a new metric called the <em>sharpe ratio</em>. It's simply equal to</p>
+$$S.R. = \frac{E(R) - R_f}{\sqrt{Var(R)}}$$<p>where $R_f$ is the <em>risk free return</em>. Since we're only limiting ourselves to risky assets (stocks) therefore, the formula becomes</p>
+$$S.R. = \frac{E(R) - 0}{\sqrt{Var(R)}} = \frac{E(R)}{\sqrt{Var(R)}}$$
 </div>
 </div>
 </div>
@@ -14263,107 +14125,46 @@ var element = $('#1bbb5b80-04c0-498c-9908-3e5e6eaf6de8');
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">income</span><span class="p">[</span><span class="s1">&#39;Data Scientist&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">generate_portfolios</span><span class="p">(</span><span class="n">weights</span><span class="p">,</span> <span class="n">returns</span><span class="p">):</span>
+
+    <span class="n">preturns</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">pvariances</span> <span class="o">=</span> <span class="p">[]</span>
+
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10000</span><span class="p">):</span>
+        <span class="n">weights</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">stocks</span><span class="p">))</span>
+        <span class="n">weights</span><span class="o">/=</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">weights</span><span class="p">)</span>
+        <span class="n">preturns</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">returns</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">*</span><span class="n">weights</span><span class="p">)</span><span class="o">*</span><span class="mi">252</span><span class="p">)</span>
+        <span class="n">pvariances</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">weights</span><span class="o">.</span><span class="n">T</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">returns</span><span class="o">.</span><span class="n">cov</span><span class="p">()</span><span class="o">*</span><span class="mi">252</span><span class="p">,</span><span class="n">weights</span><span class="p">))))</span>
+
+    <span class="n">preturns</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">preturns</span><span class="p">)</span>
+    <span class="n">pvariances</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">pvariances</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">preturns</span><span class="p">,</span><span class="n">pvariances</span>
+
+<span class="k">def</span> <span class="nf">plot_portfolios</span><span class="p">(</span><span class="n">returns</span><span class="p">,</span> <span class="n">variances</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">variances</span><span class="p">,</span><span class="n">returns</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="n">returns</span><span class="o">/</span><span class="n">variances</span><span class="p">,</span><span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Expected Volatility&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Expected Return&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Sharpe Ratio&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[19]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>61063.65739711742</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Note that the data is simulated. And the underlying distribution has a mean of 60,000. Notice how close our estimate is!</p>
-<p>Suppose that we get another sample of income (In fact you can do that by re running the cell or the entire notebook).  We are not likely to get the EXACT same result.  Estimates generally vary from one sample to another, and this <strong>sampling variation</strong> suggests our estimate may be close, but it will not be exactly equal to the parameter.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Standard-Error-(SE)-and-the-Central-Limit-Theorem-(CLT)">Standard Error (SE) and the Central Limit Theorem (CLT)<a class="anchor-link" href="#Standard-Error-(SE)-and-the-Central-Limit-Theorem-(CLT)">&#182;</a></h3><p>Suppose that we took another set of income and compute its mean: 59024.85582383834, and another set of income and compute its mean: 61010.14615678205. If we keep doing this (say a thousand times), we will obtain a <strong>sampling distribution</strong> of the sample mean. We will do this and then we will plot the result.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_data</span><span class="p">():</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">60000</span><span class="p">,</span><span class="mi">15000</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
-    <span class="n">income</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
-    <span class="n">income</span><span class="p">[</span><span class="s1">&#39;Data Scientist&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span>
-    <span class="k">return</span> <span class="n">income</span>
-
-<span class="n">sample_means</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1001</span><span class="p">):</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">create_data</span><span class="p">()</span>
-    <span class="n">sample_means</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="s1">&#39;Data Scientist&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-
-<span class="n">sampling_distribution</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
-<span class="n">sampling_distribution</span><span class="p">[</span><span class="s1">&#39;sample_means&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sample_means</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">sampling_distribution</span><span class="p">[</span><span class="s1">&#39;sample_means&#39;</span><span class="p">],</span><span class="n">kde</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">bins</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">preturns</span><span class="p">,</span> <span class="n">pvariances</span> <span class="o">=</span> <span class="n">generate_portfolios</span><span class="p">(</span><span class="n">weights</span><span class="p">,</span><span class="n">returns</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[20]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3dc09de470&gt;</pre>
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="Introduction to Statistics with Applications in Python_files/Introduction to Statistics with Applications in Python_39_1.png"
->
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -14371,19 +14172,7 @@ var element = $('#1bbb5b80-04c0-498c-9908-3e5e6eaf6de8');
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>More formally, the sampling distribution will follow a <strong>Normal Distribution</strong> with a mean equal to the POPULATION MEAN. This is true by the <strong>Central Limit Theorem</strong>. The standard deviation of the sampling distribution is called the <strong>standard error.</strong></p>
-<p>The standard error can be approximated by the sample standard deviation divided by $\sqrt{n}$ and the estimate tends to be good if n &gt; 30.</p>
-<p>The proof of the above is beyond the scope of this introductory notes, other details is discussed in the book.</p>
-<p><strong>Note</strong> We have only discuss the SE of the mean, but just know that almost every point estimate has their corresponding SE.</p>
-<p>So far, we have discussed the following points:</p>
-<ul>
-<li>Point Estimates can be used to estimate the population parameter.</li>
-<li>The estimates are not exact.</li>
-<li>We quantified the uncertainty of the sample mean using what we call the standard error.</li>
-</ul>
-<h3 id="Confidence-Interval">Confidence Interval<a class="anchor-link" href="#Confidence-Interval">&#182;</a></h3><p>Instead of supplying just a point estimate of a parameter, a next logical step would be to provide a plausible range of values for the parameter called the <em>Confidence Interval</em>.</p>
-<p>Remember from above, we highlighted that the main take away is that SE is simply the standard deviation of the sampling distribution, now this is where it becomes useful. Since the sampling distribution follows a Normal Distribution, we know that roughly 95% of the time the point estimates (sample means) will be within 2 standard errors of the true (population) mean. Mathematically that is $$\mu \pm 2 \cdot SE$$</p>
-<p>To really drive the point, let us compute that in Python.</p>
+<h2 id="Monte---Carlo-Simulation">Monte - Carlo Simulation<a class="anchor-link" href="#Monte---Carlo-Simulation">&#182;</a></h2><p>Here, we simulated 10,000 possible weight allocations, and computed their respective expected return, risk and sharpe ratio.</p>
 
 </div>
 </div>
@@ -14393,15 +14182,7 @@ var element = $('#1bbb5b80-04c0-498c-9908-3e5e6eaf6de8');
 <div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sample_mean</span> <span class="o">=</span> <span class="n">income</span><span class="p">[</span><span class="s1">&#39;Data Scientist&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="n">sample_std</span> <span class="o">=</span> <span class="n">income</span><span class="p">[</span><span class="s1">&#39;Data Scientist&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
-<span class="n">standard_error</span> <span class="o">=</span> <span class="n">sample_std</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">income</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Mean&#39;</span><span class="p">,</span><span class="n">sample_mean</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Std&#39;</span><span class="p">,</span><span class="n">sample_std</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Standard Error&#39;</span><span class="p">,</span><span class="n">standard_error</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(&#39;</span><span class="p">,</span><span class="n">sample_mean</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">standard_error</span><span class="p">,</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="n">sample_mean</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">standard_error</span><span class="p">,</span><span class="s1">&#39;)&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Using 1.96 tends to have better approximation:&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(&#39;</span><span class="p">,</span><span class="n">sample_mean</span><span class="o">-</span><span class="mf">1.96</span><span class="o">*</span><span class="n">standard_error</span><span class="p">,</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="n">sample_mean</span><span class="o">+</span><span class="mf">1.96</span><span class="o">*</span><span class="n">standard_error</span><span class="p">,</span><span class="s1">&#39;)&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plot_portfolios</span><span class="p">(</span><span class="n">preturns</span><span class="p">,</span> <span class="n">pvariances</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14417,70 +14198,78 @@ var element = $('#1bbb5b80-04c0-498c-9908-3e5e6eaf6de8');
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Mean 61063.65739711742
-Std 15359.789122963013
-Standard Error 1086.101104644252
-( 58891.45518782892 , 63235.859606405924 )
-Using 1.96 tends to have better approximation:
-( 58934.899232014686 , 63192.41556222016 )
-</pre>
+
+
+<div class="output_png output_subarea ">
+<img src="Itaewon_files/Itaewon_31_0.png"
+>
 </div>
+
 </div>
 
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Finding-the-Optimal-Weights">Finding the Optimal Weights<a class="anchor-link" href="#Finding-the-Optimal-Weights">&#182;</a></h2><p>At a high level, we would want to run an optimization algorithm that would</p>
+$$maximize\  \frac{E(R)-R_f}{\sqrt{Var(R)}}$$$$s.t. \forall w_i, w_i\geq0\ and\ \Sigma w_i=1$$<p>Full details of the mathematics behind this can be found on resources.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Sanity Check</span>
-<span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">st</span>
-<span class="n">se</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">sem</span><span class="p">(</span><span class="n">income</span><span class="p">[</span><span class="s1">&#39;Data Scientist&#39;</span><span class="p">])</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">interval</span><span class="p">(</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="n">sample_mean</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">standard_error</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">statistics</span><span class="p">(</span><span class="n">weights</span><span class="p">,</span> <span class="n">returns</span><span class="p">):</span>
+    <span class="n">portfolio_return</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">returns</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">*</span><span class="n">weights</span><span class="p">)</span><span class="o">*</span><span class="mi">252</span>
+    <span class="n">portfolio_volatility</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">weights</span><span class="o">.</span><span class="n">T</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">returns</span><span class="o">.</span><span class="n">cov</span><span class="p">()</span><span class="o">*</span><span class="mi">252</span><span class="p">,</span><span class="n">weights</span><span class="p">)))</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">portfolio_return</span><span class="p">,</span><span class="n">portfolio_volatility</span><span class="p">,</span><span class="n">portfolio_return</span><span class="o">/</span><span class="n">portfolio_volatility</span><span class="p">])</span>
+
+
+<span class="k">def</span> <span class="nf">min_func_sharpe</span><span class="p">(</span><span class="n">weights</span><span class="p">,</span><span class="n">returns</span><span class="p">):</span>
+    <span class="k">return</span> <span class="o">-</span><span class="n">statistics</span><span class="p">(</span><span class="n">weights</span><span class="p">,</span><span class="n">returns</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span> 
+
+
+<span class="k">def</span> <span class="nf">optimize_portfolio</span><span class="p">(</span><span class="n">weights</span><span class="p">,</span><span class="n">returns</span><span class="p">):</span>
+    <span class="n">constraints</span> <span class="o">=</span> <span class="p">({</span><span class="s1">&#39;type&#39;</span><span class="p">:</span><span class="s1">&#39;eq&#39;</span><span class="p">,</span><span class="s1">&#39;fun&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">})</span> 
+    <span class="n">bounds</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">stocks</span><span class="p">)))</span> 
+    <span class="n">optimum</span><span class="o">=</span><span class="n">optimization</span><span class="o">.</span><span class="n">minimize</span><span class="p">(</span><span class="n">fun</span><span class="o">=</span><span class="n">min_func_sharpe</span><span class="p">,</span><span class="n">x0</span><span class="o">=</span><span class="n">weights</span><span class="p">,</span><span class="n">args</span><span class="o">=</span><span class="n">returns</span><span class="p">,</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;SLSQP&#39;</span><span class="p">,</span><span class="n">bounds</span><span class="o">=</span><span class="n">bounds</span><span class="p">,</span><span class="n">constraints</span><span class="o">=</span><span class="n">constraints</span><span class="p">)</span> 
+    <span class="k">return</span> <span class="n">optimum</span>
+
+
+<span class="k">def</span> <span class="nf">print_optimal_portfolio</span><span class="p">(</span><span class="n">optimum</span><span class="p">,</span> <span class="n">returns</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Optimal weights:&quot;</span><span class="p">,</span> <span class="n">optimum</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Expected return, volatility and Sharpe ratio:&quot;</span><span class="p">,</span> <span class="n">statistics</span><span class="p">(</span><span class="n">optimum</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span><span class="n">returns</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">show_optimal_portfolio</span><span class="p">(</span><span class="n">optimum</span><span class="p">,</span> <span class="n">returns</span><span class="p">,</span> <span class="n">preturns</span><span class="p">,</span> <span class="n">pvariances</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pvariances</span><span class="p">,</span><span class="n">preturns</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="n">preturns</span><span class="o">/</span><span class="n">pvariances</span><span class="p">,</span><span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Expected Volatility&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Expected Return&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Sharpe Ratio&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">statistics</span><span class="p">(</span><span class="n">optimum</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span><span class="n">returns</span><span class="p">)[</span><span class="mi">1</span><span class="p">],</span><span class="n">statistics</span><span class="p">(</span><span class="n">optimum</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span><span class="n">returns</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span><span class="s1">&#39;g*&#39;</span><span class="p">,</span><span class="n">markersize</span><span class="o">=</span><span class="mf">20.0</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>(58934.93834844552, 63192.37644578933)
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Note</strong> 95% confidence intervals aren't exactly 2 standard deviations from the mean. They aren't 1.96 standard deviations either. It's closer to 1.95996398454005.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(&#39;</span><span class="p">,</span><span class="n">sample_mean</span><span class="o">-</span><span class="mf">1.95996398454005</span><span class="o">*</span><span class="n">standard_error</span><span class="p">,</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="n">sample_mean</span><span class="o">+</span><span class="mf">1.95996398454005</span><span class="o">*</span><span class="n">standard_error</span><span class="p">,</span><span class="s1">&#39;)&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">optimum</span><span class="o">=</span><span class="n">optimize_portfolio</span><span class="p">(</span><span class="n">weights</span><span class="p">,</span><span class="n">returns</span><span class="p">)</span>
+<span class="n">print_optimal_portfolio</span><span class="p">(</span><span class="n">optimum</span><span class="p">,</span> <span class="n">returns</span><span class="p">)</span>
+<span class="n">show_optimal_portfolio</span><span class="p">(</span><span class="n">optimum</span><span class="p">,</span> <span class="n">returns</span><span class="p">,</span> <span class="n">preturns</span><span class="p">,</span> <span class="n">pvariances</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14497,75 +14286,22 @@ Using 1.96 tends to have better approximation:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>( 58934.938348445525 , 63192.37644578932 )
+<pre>Optimal weights: [0.122 0.    0.09  0.788]
+Expected return, volatility and Sharpe ratio: [0.14160147 0.23423143 0.60453661]
 </pre>
 </div>
 </div>
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Hypothesis-Testing">Hypothesis Testing<a class="anchor-link" href="#Hypothesis-Testing">&#182;</a></h3><ul>
-<li>Is a statistical technique used to evaluate competing claims using data.</li>
-<li>The null hypothesis usually takes a stance of no  difference or no  effect. </li>
-<li>(<strong>More formally</strong>) We reject a null hypothesis depending if its <em>p-value</em> is less than a set significance level called $\alpha.$ Otherwise, we fail to reject the null hypothesis. We will discuss this further in the next section.<ul>
-<li>The p-value is the probability of observing data at least as favorable to the alternative hypothesis as our current data set, if the null hypothesis were true.</li>
-</ul>
-</li>
-<li>We present an example below that captures the essence of Hypothesis Testing.</li>
-</ul>
-<p><strong>Example</strong> <br>
-Suppose there was a HR company that claimed that the average salary of a Data Scientist in Metro Manila is 58,500. We wanted to check if our sampled data provides strong evidence to disprove the HR company's claim.</p>
-<p>To answer the above question, we will label the two competing claims $H_0$ and $H_A$:</p>
-<p>$H_0$ (Null Hypothesis) : Our sampled data was the same as the reported average salary of 58,500.</p>
-<p>$H_A$ (Alternative Hypothesis) : Our sampled data <strong>is not</strong> the same as the reported average salary.</p>
-<p><strong>Solution:</strong></p>
-<p>Now, we will set our significance level $\alpha=0.05$. In the formal setting, this means that if the  $p \leq \alpha$, then we <strong>reject the null hypothesis</strong>. In our case, what this means is we will be creating a (1-0.05) = 95% confidene interval.</p>
-<p>From above, the 95% confidence interval is: (58934.93834844552, 63192.37644578933)</p>
-<p>Since 58,500 is <strong>not</strong> in the confidence interval, then we reject the null hypothesis.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Different-significance-level-yields-different-results">Different significance level yields different results<a class="anchor-link" href="#Different-significance-level-yields-different-results">&#182;</a></h4><p>If we suppose that we wanted to set $\alpha=0.01$ then, this means that we need to create a 99% confidence interval. We create the interval by $$\mu \pm 2.58 \cdot SE$$</p>
-<p>Now, we can update the above code</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">interval</span><span class="p">(</span><span class="mf">0.99</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="n">sample_mean</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">standard_error</span><span class="p">)</span>
-<span class="n">a</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt"></div>
 
 
 
 
-<div class="output_text output_subarea output_execute_result">
-<pre>(58266.04634515793, 63861.26844907692)</pre>
+<div class="output_png output_subarea ">
+<img src="Itaewon_files/Itaewon_34_1.png"
+>
 </div>
 
 </div>
@@ -14577,18 +14313,26 @@ Suppose there was a HR company that claimed that the average salary of a Data Sc
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Since 58,500 is in the above interval, therefore we <strong>fail to reject</strong> the null hypothesis.</p>
+<p>Resources:</p>
+<ul>
+<li>Financial Mathematics<ul>
+<li><a href="https://www.springer.com/gp/book/9780857290816">https://www.springer.com/gp/book/9780857290816</a></li>
+</ul>
+</li>
+<li>General Investing<ul>
+<li><a href="https://www.ig.com/en/learn-to-trade/ig-academy">https://www.ig.com/en/learn-to-trade/ig-academy</a></li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
 </div>
     </div>
   </div>
-
-
-
 </body>
 
+ 
 
 
 </html>
