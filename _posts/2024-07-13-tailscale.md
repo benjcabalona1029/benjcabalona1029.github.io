@@ -9,12 +9,12 @@ Tailscale is my service of choice to giving the mentees access to VMs in my home
 
 1. Create an account via  [https://tailscale.com/](https://tailscale.com/)
 2. Download tailscale into your machine using [https://tailscale.com/download](https://tailscale.com/download)
-
-You can confirm if you are connected to your tailnet if the machines is here:
-![alt text](/assets/images/post_0002/tailscale.png "tailscale")
-
 3. Wait for the invite link that i will send you to access the VM.
 4. Test if you can ping the VM.
+
+If the set up is correct, when you navigate to [https://login.tailscale.com/admin/machines/](https://login.tailscale.com/admin/machines/) then you should see something similar to the image below. The one tag as `Shared In` is the machine/VM that I shared. The other is most likely your machine.
+
+![alt text](/assets/images/post_0002/tailscale.png "tailscale")
 
 And that's it!
 
