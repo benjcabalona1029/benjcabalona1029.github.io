@@ -16,3 +16,5 @@ The high-level architecture of the company is as follows:
 - MinIO is our object storage. On top of it is DuckDB, which serves as our lakehouse. We will use Delta Lake for storage. We will follow the Medallion architecture.
 
 - Finally, a dashboard and an ML application will connect to our lakehouse.
+
+![alt text](/assets/images/post_0003/arch.png "architecture")
